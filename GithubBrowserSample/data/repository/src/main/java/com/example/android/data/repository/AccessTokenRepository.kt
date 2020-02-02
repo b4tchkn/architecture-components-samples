@@ -1,4 +1,4 @@
-package com.android.example.github.repository
+package com.example.android.data.repository
 
 import com.android.example.model.AccessToken
 import com.chibatching.kotpref.KotprefModel

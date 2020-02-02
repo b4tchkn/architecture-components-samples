@@ -2,11 +2,11 @@ package com.android.example.github.util
 
 import android.content.Intent
 import android.net.Uri
-import com.android.example.github.BuildConfig
 import com.android.example.data.api.AccessTokenParameter
 import com.android.example.data.api.GithubAuthService
-import com.android.example.github.repository.AccessTokenRepository
+import com.android.example.github.BuildConfig
 import com.android.example.model.AccessToken
+import com.example.android.data.repository.AccessTokenRepository
 import timber.log.Timber
 import javax.inject.Inject
 
