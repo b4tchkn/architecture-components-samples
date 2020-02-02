@@ -22,10 +22,10 @@ import com.android.example.data.api.ApiEmptyResponse
 import com.android.example.data.api.ApiErrorResponse
 import com.android.example.data.api.ApiResponse
 import com.android.example.data.api.ApiSuccessResponse
-import com.android.example.github.api.GithubService
+import com.android.example.data.api.GithubService
 import com.android.example.github.db.GithubDb
 import com.android.example.github.vo.RepoSearchResult
-import com.android.example.github.vo.Resource
+import com.android.example.model.Resource
 import java.io.IOException
 
 /**
