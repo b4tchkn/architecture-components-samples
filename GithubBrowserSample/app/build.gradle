@@ -24,7 +24,7 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 allOpen {
     // allows mocking for classes w/o directly opening them for release builds
-    annotation 'com.android.example.github.testing.OpenClass'
+    annotation 'com.example.android.testing.OpenClass'
 }
 android {
     compileSdkVersion build_versions.target_sdk
@@ -78,6 +78,9 @@ dependencies {
     implementation project(":data:api")
     implementation project(":data:api-builder")
     implementation project(":data:repository")
+    implementation project(":data:db")
+    releaseImplementation project(":testing-release")
+    debugImplementation project(":testing-debug")
 
     implementation deps.app_compat
     implementation deps.recyclerview

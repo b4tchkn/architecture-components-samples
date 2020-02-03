@@ -28,6 +28,9 @@ android {
 
 dependencies {
     api project(":model")
+    releaseImplementation project(":testing-release")
+    debugImplementation project(":testing-debug")
+    implementation project(":data:api")
 
     implementation deps.lifecycle.livedata_ktx
     implementation deps.kotlin.stdlib

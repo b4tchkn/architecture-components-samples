@@ -20,11 +20,11 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.android.example.data.api.GithubService
 import com.android.example.data.api.RepoSearchResponse
-import com.android.example.github.db.GithubDb
-import com.android.example.github.db.RepoDao
+import com.example.android.data.db.GithubDb
+import com.example.android.data.db.RepoDao
 import com.android.example.github.util.TestUtil
 import com.android.example.github.util.mock
-import com.android.example.github.vo.RepoSearchResult
+import com.example.android.data.db.RepoSearchResult
 import com.android.example.model.Resource
 import okhttp3.Headers
 import okhttp3.MediaType
@@ -52,9 +52,9 @@ class FetchNextSearchPageTaskTest {
 
     private lateinit var service: GithubService
 
-    private lateinit var db: GithubDb
+    private lateinit var db: com.example.android.data.db.GithubDb
 
-    private lateinit var repoDao: RepoDao
+    private lateinit var repoDao: com.example.android.data.db.RepoDao
 
     private lateinit var task: FetchNextSearchPageTask
 
@@ -63,9 +63,9 @@ class FetchNextSearchPageTaskTest {
     @Before
     fun init() {
         service = mock(GithubService::class.java)
-        db = mock(GithubDb::class.java)
+        db = mock(com.example.android.data.db.GithubDb::class.java)
         `when`(db.runInTransaction(any())).thenCallRealMethod()
-        repoDao = mock(RepoDao::class.java)
+        repoDao = mock(com.example.android.data.db.RepoDao::class.java)
         `when`(db.repoDao()).thenReturn(repoDao)
         task = FetchNextSearchPageTask("foo", service, db)
         task.liveData.observeForever(observer)
@@ -141,7 +141,7 @@ class FetchNextSearchPageTaskTest {
     }
 
     private fun createDbResult(nextPage: Int?) {
-        val result = RepoSearchResult(
+        val result = com.example.android.data.db.RepoSearchResult(
             "foo", emptyList(),
             0, nextPage
         )

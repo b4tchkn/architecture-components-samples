@@ -29,15 +29,15 @@ abstract class DbTest {
     @Rule
     @JvmField
     val countingTaskExecutorRule = CountingTaskExecutorRule()
-    private lateinit var _db: GithubDb
-    val db: GithubDb
+    private lateinit var _db: com.example.android.data.db.GithubDb
+    val db: com.example.android.data.db.GithubDb
         get() = _db
 
     @Before
     fun initDb() {
         _db = Room.inMemoryDatabaseBuilder(
             ApplicationProvider.getApplicationContext(),
-            GithubDb::class.java
+            com.example.android.data.db.GithubDb::class.java
         ).build()
     }
 

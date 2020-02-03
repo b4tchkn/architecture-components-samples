@@ -18,14 +18,9 @@ package com.android.example.github.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.android.example.data.api.ApiEmptyResponse
-import com.android.example.data.api.ApiErrorResponse
-import com.android.example.data.api.ApiResponse
-import com.android.example.data.api.ApiSuccessResponse
-import com.android.example.data.api.GithubService
-import com.android.example.github.db.GithubDb
-import com.android.example.github.vo.RepoSearchResult
+import com.android.example.data.api.*
 import com.android.example.model.Resource
+import com.example.android.data.db.GithubDb
 import java.io.IOException
 
 /**
@@ -60,7 +55,7 @@ class FetchNextSearchPageTask constructor(
                     ids.addAll(current.repoIds)
 
                     ids.addAll(apiResponse.body.items.map { it.id })
-                    val merged = RepoSearchResult(
+                    val merged = com.example.android.data.db.RepoSearchResult(
                         query, ids,
                         apiResponse.body.total, apiResponse.nextPage
                     )
