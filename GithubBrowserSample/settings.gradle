@@ -14,7 +14,10 @@
  * limitations under the License.
  */
 
-include ':app',
+include ':app', ':di',
+        ':envvar',
+        ':feature:login',
+        ':executor',
         ':testing-release',
         ':testing-debug',
         ':model',

@@ -20,13 +20,13 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import com.android.example.data.api.GithubService
-import com.example.android.data.db.UserDao
 import com.android.example.github.util.ApiUtil
 import com.android.example.github.util.InstantAppExecutors
 import com.android.example.github.util.TestUtil
 import com.android.example.github.util.mock
 import com.android.example.model.Resource
 import com.android.example.model.User
+import com.example.android.data.repository.UserRepository
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

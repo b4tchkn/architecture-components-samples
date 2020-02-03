@@ -27,6 +27,7 @@ android {
 }
 
 dependencies {
+    implementation deps.kotlin.stdlib
     implementation deps.retrofit.gson
     implementation deps.room.runtime
 

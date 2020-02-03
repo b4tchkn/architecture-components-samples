@@ -31,7 +31,7 @@ dependencies {
 
     implementation deps.lifecycle.livedata_ktx
     implementation deps.kotlin.stdlib
-    implementation deps.retrofit.runtime
+    api deps.retrofit.runtime
     implementation deps.retrofit.gson
     implementation deps.timber
 

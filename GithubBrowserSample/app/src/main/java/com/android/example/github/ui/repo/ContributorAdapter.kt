@@ -22,7 +22,7 @@ import androidx.recyclerview.widget.DiffUtil
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
-import com.android.example.github.AppExecutors
+import com.example.android.executor.AppExecutors
 import com.android.example.github.R
 import com.android.example.github.databinding.ContributorItemBinding
 import com.android.example.github.ui.common.DataBoundListAdapter

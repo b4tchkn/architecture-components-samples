@@ -20,9 +20,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
-import com.android.example.github.repository.RepoRepository
+import com.example.android.data.repository.RepoRepository
 import com.example.android.testing.OpenForTesting
-import com.android.example.github.util.AbsentLiveData
+import com.example.android.data.repository.AbsentLiveData
 import com.android.example.model.Contributor
 import com.android.example.model.Repo
 import com.android.example.model.Resource

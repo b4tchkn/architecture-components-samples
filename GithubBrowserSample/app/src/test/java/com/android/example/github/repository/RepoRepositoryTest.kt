@@ -22,9 +22,7 @@ import androidx.lifecycle.Observer
 import com.android.example.data.api.ApiResponse
 import com.android.example.data.api.GithubService
 import com.android.example.data.api.RepoSearchResponse
-import com.example.android.data.db.GithubDb
-import com.example.android.data.db.RepoDao
-import com.android.example.github.util.AbsentLiveData
+import com.example.android.data.repository.AbsentLiveData
 import com.android.example.github.util.ApiUtil.successCall
 import com.android.example.github.util.InstantAppExecutors
 import com.android.example.github.util.TestUtil
@@ -32,8 +30,8 @@ import com.android.example.github.util.argumentCaptor
 import com.android.example.github.util.mock
 import com.android.example.model.Contributor
 import com.android.example.model.Repo
-import com.example.android.data.db.RepoSearchResult
 import com.android.example.model.Resource
+import com.example.android.data.repository.RepoRepository
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Before

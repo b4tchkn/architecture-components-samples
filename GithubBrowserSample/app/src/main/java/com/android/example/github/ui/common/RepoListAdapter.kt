@@ -21,7 +21,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.android.example.github.AppExecutors
+import com.example.android.executor.AppExecutors
 import com.android.example.github.R
 import com.android.example.github.databinding.RepoItemBinding
 import com.android.example.model.Repo
