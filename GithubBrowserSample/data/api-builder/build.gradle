@@ -34,7 +34,7 @@ dependencies {
     implementation deps.kotlin.stdlib
     implementation deps.retrofit.runtime
     implementation deps.retrofit.gson
-    implementation deps.okhttp_logging_interceptor
+    api deps.okhttp_logging_interceptor
 
     implementation deps.dagger.runtime
     kapt deps.dagger.compiler
