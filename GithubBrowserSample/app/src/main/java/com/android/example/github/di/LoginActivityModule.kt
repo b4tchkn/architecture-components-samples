@@ -16,7 +16,7 @@
 
 package com.android.example.github.di
 
-import com.example.android.feature.login.LoginActivity
+import com.android.example.feature.login.LoginActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

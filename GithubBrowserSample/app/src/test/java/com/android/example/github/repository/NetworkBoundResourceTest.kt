@@ -27,7 +27,7 @@ import com.android.example.github.util.CountingAppExecutors
 import com.android.example.github.util.InstantAppExecutors
 import com.android.example.github.util.mock
 import com.android.example.model.Resource
-import com.example.android.data.repository.NetworkBoundResource
+import com.android.example.data.repository.NetworkBoundResource
 import okhttp3.MediaType
 import okhttp3.ResponseBody
 import org.hamcrest.CoreMatchers.`is`

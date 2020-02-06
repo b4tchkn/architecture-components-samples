@@ -18,7 +18,7 @@ package com.android.example.github.util
 
 import androidx.test.espresso.IdlingRegistry
 import androidx.test.espresso.IdlingResource
-import com.example.android.executor.AppExecutors
+import com.android.example.executor.AppExecutors
 import org.junit.rules.TestWatcher
 import org.junit.runner.Description
 import java.util.UUID

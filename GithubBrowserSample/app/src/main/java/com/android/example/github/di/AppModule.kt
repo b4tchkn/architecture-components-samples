@@ -21,8 +21,8 @@ import androidx.room.Room
 import com.android.example.data.api.GithubAuthService
 import com.android.example.data.api.GithubService
 import com.android.example.github.BuildConfig
-import com.example.android.data.api_builder.ApiBuilder
-import com.example.android.envvar.EnvVar
+import com.android.example.data.api_builder.ApiBuilder
+import com.android.example.envvar.EnvVar
 import dagger.Module
 import dagger.Provides
 import okhttp3.logging.HttpLoggingInterceptor
@@ -53,22 +53,22 @@ class AppModule {
 
     @Singleton
     @Provides
-    fun provideDb(app: Application): com.example.android.data.db.GithubDb {
+    fun provideDb(app: Application): com.android.example.data.db.GithubDb {
         return Room
-            .databaseBuilder(app, com.example.android.data.db.GithubDb::class.java, "github.db")
+            .databaseBuilder(app, com.android.example.data.db.GithubDb::class.java, "github.db")
             .fallbackToDestructiveMigration()
             .build()
     }
 
     @Singleton
     @Provides
-    fun provideUserDao(db: com.example.android.data.db.GithubDb): com.example.android.data.db.UserDao {
+    fun provideUserDao(db: com.android.example.data.db.GithubDb): com.android.example.data.db.UserDao {
         return db.userDao()
     }
 
     @Singleton
     @Provides
-    fun provideRepoDao(db: com.example.android.data.db.GithubDb): com.example.android.data.db.RepoDao {
+    fun provideRepoDao(db: com.android.example.data.db.GithubDb): com.android.example.data.db.RepoDao {
         return db.repoDao()
     }
 

@@ -14,7 +14,8 @@
  * limitations under the License.
  */
 
-include ':app', ':di',
+include ':app',
+        ':di',
         ':envvar',
         ':feature:login',
         ':executor',
