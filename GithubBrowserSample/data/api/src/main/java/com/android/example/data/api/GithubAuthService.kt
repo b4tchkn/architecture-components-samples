@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.example.github.api
+package com.android.example.data.api
 
 import retrofit2.http.Body
 import retrofit2.http.Headers
