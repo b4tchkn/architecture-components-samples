@@ -1,6 +1,5 @@
-package com.android.example.github.api
+package com.android.example.data.api_builder
 
-import com.android.example.github.repository.AccessTokenRepository
 import okhttp3.Interceptor
 import okhttp3.Response
 import javax.inject.Inject
@@ -8,7 +7,7 @@ import javax.inject.Singleton
 
 @Singleton
 class AuthenticationInterceptor @Inject constructor(
-    private val accessTokenRepository: AccessTokenRepository
+    private val accessTokenRepository: com.android.example.data.repository.AccessTokenRepository
 ) : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request().newBuilder().apply {
